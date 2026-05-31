@@ -1,0 +1,39 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(ls -d ~/miniconda3 2>/dev/null && echo \"EXISTS\" || echo \"NOT_FOUND\")",
+      "Read(//Users/ahs/miniconda3/**)",
+      "Bash(cat ~/.zshrc 2>/dev/null | grep -n conda || echo \"No conda lines in .zshrc\")",
+      "Read(//Users/ahs/**)",
+      "Bash(~/miniconda3/bin/conda init *)",
+      "Bash(~/miniconda3/_conda install *)",
+      "Bash(rm -rf ~/miniconda3)",
+      "Bash(curl -L -o /tmp/miniconda.sh \"https://repo.anaconda.com/miniconda/Miniconda3-latest-MacOSX-arm64.sh\")",
+      "Bash(bash /tmp/miniconda.sh -b -p ~/miniconda3)",
+      "Bash(rm /tmp/miniconda.sh)",
+      "Bash(conda tos *)",
+      "Bash(~/miniconda3/bin/conda tos *)",
+      "Bash(brew install *)",
+      "Bash(/Users/ahs/miniconda3/envs/meanvc/bin/python -c \"import PyQt6; print\\(PyQt6.__version__\\)\")",
+      "Bash(/Users/ahs/miniconda3/envs/meanvc/bin/pip install *)",
+      "Bash(/Users/ahs/miniconda3/envs/meanvc/bin/python -c \"import py_compile; py_compile.compile\\('/Users/ahs/Documents/GitHub/MeanVC/main.py', doraise=True\\); print\\('Syntax OK'\\)\")",
+      "Bash(/Users/ahs/miniconda3/envs/meanvc/bin/gdown \"https://drive.google.com/uc?id=1-aE1NfzpRCLxA4GUxX9ITI3F9LlbtEGP\" -O /Users/ahs/Documents/GitHub/MeanVC/src/runtime/speaker_verification/ckpt/wavlm_large_finetune.pth)",
+      "Bash(/Users/ahs/miniconda3/envs/meanvc/bin/python -m pytest temp/test_core.py temp/test_vcworker.py -v)",
+      "Bash(/Users/ahs/miniconda3/envs/meanvc/bin/python -m unittest temp/test_core.py temp/test_vcworker.py -v)",
+      "Bash(/Users/ahs/miniconda3/envs/meanvc/bin/python -m unittest temp/test_gui_smoke.py -v)",
+      "Bash(/Users/ahs/miniconda3/envs/meanvc/bin/python -m unittest discover -s temp -p \"test_*.py\" -v)",
+      "Bash(/Users/ahs/miniconda3/envs/meanvc/bin/python temp/debug_conversion.py)",
+      "Bash(/Users/ahs/miniconda3/envs/meanvc/bin/python temp/debug_threading.py)",
+      "Bash(/Users/ahs/miniconda3/envs/meanvc/bin/python -c \"import soundfile; print\\('soundfile OK'\\)\")",
+      "Bash(/Users/ahs/miniconda3/envs/meanvc/bin/python -c \"import py_compile; py_compile.compile\\('/Users/ahs/Documents/GitHub/MeanVC/main.py', doraise=True\\); print\\('OK'\\)\")",
+      "Bash(python3 -c \"import py_compile; py_compile.compile\\('/Users/ahs/Documents/GitHub/MeanVC/main.py', doraise=True\\)\")",
+      "Bash(python3 -c \"import py_compile; py_compile.compile\\('/Users/ahs/Documents/GitHub/MeanVC/extract_spk.py', doraise=True\\)\")",
+      "Bash(python3 -c \"import py_compile; py_compile.compile\\('/Users/ahs/Documents/GitHub/MeanVC/main.py', doraise=True\\); py_compile.compile\\('/Users/ahs/Documents/GitHub/MeanVC/extract_spk.py', doraise=True\\); print\\('OK'\\)\")",
+      "Bash(python3 -c \"import py_compile; py_compile.compile\\('/Users/ahs/Documents/GitHub/MeanVC/main.py', doraise=True\\); print\\('OK'\\)\")"
+    ],
+    "additionalDirectories": [
+      "/Users/ahs/miniconda3",
+      "/private/tmp"
+    ]
+  }
+}

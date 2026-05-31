@@ -1,0 +1,2 @@
+source: /Users/ahs/Documents/GitHub/MeanVC/target_voice/celeb_zh_zhenhuan.wav
+duration: 6.7s

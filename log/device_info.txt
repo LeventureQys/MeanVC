@@ -1,0 +1,9 @@
+input_device_id=2
+output_device_id=1
+input_name=MacBook Pro麦克风
+input_max_input_ch=1
+input_default_sr=48000.0
+output_name=EDIFIER W860NB Pro
+output_max_output_ch=2
+output_default_sr=44100.0
+CHUNK=3200

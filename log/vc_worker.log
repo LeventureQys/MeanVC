@@ -1,0 +1,371 @@
+[01:06:39] [INFO] ============================================================
+[01:06:39] [INFO] VCWorker started
+[01:06:39] [INFO]   input_device_id: 2
+[01:06:39] [INFO]   output_device_id: 1
+[01:06:39] [INFO]   steps: 2
+[01:06:39] [INFO]   timesteps: [1.0, 0.800000011920929, 0.0]
+[01:06:39] [INFO]   vc_spk_emb: shape=torch.Size([1, 256]), dtype=torch.float32, min=-0.5145, max=0.7408, mean=-0.0014
+[01:06:39] [INFO]   vc_prompt_mel: shape=torch.Size([1, 384, 80]), dtype=torch.float32, min=-0.8025, max=0.7507, mean=-0.3049
+[01:06:39] [INFO]   ASR model type: <class 'torch.jit._script.RecursiveScriptModule'>
+[01:06:39] [INFO]   VC model type: <class 'torch.jit._script.RecursiveScriptModule'>
+[01:06:39] [INFO]   Vocoder type: <class 'torch.jit._script.RecursiveScriptModule'>
+[01:06:39] [INFO]   in_stream is_active: True
+[01:06:39] [INFO]   out_stream is_active: True
+[01:06:39] [INFO]   CHUNK (samples per read): 3200
+[01:06:39] [INFO]   decoding_chunk_size: 5
+[01:06:39] [INFO] --- Warmup (5 chunks) ---
+[01:06:39] [INFO]   warmup[0]: read 6400 bytes → 3200 samples, min=-0.0086, max=0.0074, rms=0.0027
+[01:06:39] [INFO]   warmup[1]: read 6400 bytes → 3200 samples, min=-0.0076, max=0.0082, rms=0.0028
+[01:06:40] [INFO]   warmup[2]: read 6400 bytes → 3200 samples, min=-0.0083, max=0.0090, rms=0.0032
+[01:06:40] [INFO]   warmup[3]: read 6400 bytes → 3200 samples, min=-0.0087, max=0.0102, rms=0.0029
+[01:06:40] [INFO]   warmup[4]: read 6400 bytes → 3200 samples, min=-0.0089, max=0.0071, rms=0.0027
+[01:06:40] [INFO] Saved warmup audio: 16000 samples (1.00s)
+[01:06:40] [INFO] ============================================================
+[01:06:40] [INFO] Starting conversion loop
+[01:06:40] [INFO] chunk[000]: read_bytes=6400 in_samples=3920 out_samples=2720 fbanks=[1, 23, 80] enc_out=[1, 6, 256] enc_up=[1, 20, 256] x_mean=-0.7029 x_std=0.1415 x_range=[-1.047,-0.217] vc_offset=20 wav_rms=0.0005 wav_peak=0.003 time=302.9ms
+[01:06:41] [INFO] chunk[001]: read_bytes=6400 in_samples=3200 out_samples=3200 fbanks=[1, 23, 80] enc_out=[1, 6, 256] enc_up=[1, 20, 256] x_mean=-0.7056 x_std=0.1257 x_range=[-0.998,-0.268] vc_offset=40 wav_rms=0.0005 wav_peak=0.003 time=162.5ms
+[01:06:41] [INFO] chunk[002]: read_bytes=6400 in_samples=3200 out_samples=3200 fbanks=[1, 23, 80] enc_out=[1, 6, 256] enc_up=[1, 20, 256] x_mean=-0.6222 x_std=0.1153 x_range=[-1.015,-0.219] vc_offset=60 wav_rms=0.0009 wav_peak=0.003 time=45.3ms
+[01:06:41] [INFO] chunk[003]: read_bytes=6400 in_samples=3200 out_samples=3200 fbanks=[1, 23, 80] enc_out=[1, 6, 256] enc_up=[1, 20, 256] x_mean=-0.6211 x_std=0.1268 x_range=[-0.952,-0.166] vc_offset=80 wav_rms=0.0007 wav_peak=0.003 time=43.7ms
+[01:06:41] [INFO] chunk[004]: read_bytes=6400 in_samples=3200 out_samples=3200 fbanks=[1, 23, 80] enc_out=[1, 6, 256] enc_up=[1, 20, 256] x_mean=-0.6678 x_std=0.1307 x_range=[-0.992,-0.158] vc_offset=100 wav_rms=0.0009 wav_peak=0.003 time=42.7ms
+[01:06:41] [INFO] chunk[005]: read_bytes=6400 in_samples=3200 out_samples=3200 fbanks=[1, 23, 80] enc_out=[1, 6, 256] enc_up=[1, 20, 256] x_mean=-0.6478 x_std=0.1475 x_range=[-0.999,-0.163] vc_offset=120 wav_rms=0.0013 wav_peak=0.006 time=49.8ms
+[01:06:41] [INFO] chunk[006]: read_bytes=6400 in_samples=3200 out_samples=3200 fbanks=[1, 23, 80] enc_out=[1, 6, 256] enc_up=[1, 20, 256] x_mean=-0.7019 x_std=0.1430 x_range=[-0.991,-0.221] vc_offset=140 wav_rms=0.0012 wav_peak=0.004 time=45.9ms
+[01:06:42] [INFO] chunk[007]: read_bytes=6400 in_samples=3200 out_samples=3200 fbanks=[1, 23, 80] enc_out=[1, 6, 256] enc_up=[1, 20, 256] x_mean=-0.7067 x_std=0.1403 x_range=[-1.019,-0.181] vc_offset=160 wav_rms=0.0008 wav_peak=0.004 time=56.1ms
+[01:06:42] [INFO] chunk[008]: read_bytes=6400 in_samples=3200 out_samples=3200 fbanks=[1, 23, 80] enc_out=[1, 6, 256] enc_up=[1, 20, 256] x_mean=-0.7353 x_std=0.1408 x_range=[-1.023,-0.196] vc_offset=180 wav_rms=0.0005 wav_peak=0.002 time=44.6ms
+[01:06:42] [INFO] chunk[009]: read_bytes=6400 in_samples=3200 out_samples=3200 fbanks=[1, 23, 80] enc_out=[1, 6, 256] enc_up=[1, 20, 256] x_mean=-0.7574 x_std=0.1368 x_range=[-1.009,-0.235] vc_offset=200 wav_rms=0.0004 wav_peak=0.001 time=44.6ms
+[01:06:46] [INFO] chunk[030]: read_bytes=6400 in_samples=3200 out_samples=3200 fbanks=[1, 23, 80] enc_out=[1, 6, 256] enc_up=[1, 20, 256] x_mean=-0.7910 x_std=0.1242 x_range=[-1.035,-0.311] vc_offset=620 wav_rms=0.0004 wav_peak=0.002 time=51.8ms
+[01:06:47] [INFO] Cleaning up — processed 37 chunks total
+[01:06:48] [INFO] Cleanup complete
+[01:07:07] [INFO] ============================================================
+[01:07:07] [INFO] VCWorker started
+[01:07:07] [INFO]   input_device_id: 2
+[01:07:07] [INFO]   output_device_id: 1
+[01:07:07] [INFO]   steps: 2
+[01:07:07] [INFO]   timesteps: [1.0, 0.800000011920929, 0.0]
+[01:07:07] [INFO]   vc_spk_emb: shape=torch.Size([1, 256]), dtype=torch.float32, min=-0.3615, max=0.4297, mean=-0.0102
+[01:07:07] [INFO]   vc_prompt_mel: shape=torch.Size([1, 668, 80]), dtype=torch.float32, min=-0.8038, max=0.9463, mean=-0.0262
+[01:07:07] [INFO]   ASR model type: <class 'torch.jit._script.RecursiveScriptModule'>
+[01:07:07] [INFO]   VC model type: <class 'torch.jit._script.RecursiveScriptModule'>
+[01:07:07] [INFO]   Vocoder type: <class 'torch.jit._script.RecursiveScriptModule'>
+[01:07:07] [INFO]   in_stream is_active: True
+[01:07:07] [INFO]   out_stream is_active: True
+[01:07:07] [INFO]   CHUNK (samples per read): 3200
+[01:07:07] [INFO]   decoding_chunk_size: 5
+[01:07:07] [INFO] --- Warmup (5 chunks) ---
+[01:07:07] [INFO]   warmup[0]: read 6400 bytes → 3200 samples, min=-0.0079, max=0.0068, rms=0.0022
+[01:07:08] [INFO]   warmup[1]: read 6400 bytes → 3200 samples, min=-0.0090, max=0.0067, rms=0.0031
+[01:07:08] [INFO]   warmup[2]: read 6400 bytes → 3200 samples, min=-0.0071, max=0.0078, rms=0.0028
+[01:07:08] [INFO]   warmup[3]: read 6400 bytes → 3200 samples, min=-0.0078, max=0.0062, rms=0.0022
+[01:07:08] [INFO]   warmup[4]: read 6400 bytes → 3200 samples, min=-0.0121, max=0.0096, rms=0.0028
+[01:07:08] [INFO] Saved warmup audio: 16000 samples (1.00s)
+[01:07:08] [INFO] ============================================================
+[01:07:08] [INFO] Starting conversion loop
+[01:07:09] [INFO] chunk[000]: read_bytes=6400 in_samples=3920 out_samples=2720 fbanks=[1, 23, 80] enc_out=[1, 6, 256] enc_up=[1, 20, 256] x_mean=-0.5562 x_std=0.1757 x_range=[-0.944,0.124] vc_offset=20 wav_rms=0.0024 wav_peak=0.011 time=275.3ms
+[01:07:09] [INFO] chunk[001]: read_bytes=6400 in_samples=3200 out_samples=3200 fbanks=[1, 23, 80] enc_out=[1, 6, 256] enc_up=[1, 20, 256] x_mean=-0.6276 x_std=0.1798 x_range=[-0.961,0.055] vc_offset=40 wav_rms=0.0034 wav_peak=0.037 time=155.5ms
+[01:07:09] [INFO] chunk[002]: read_bytes=6400 in_samples=3200 out_samples=3200 fbanks=[1, 23, 80] enc_out=[1, 6, 256] enc_up=[1, 20, 256] x_mean=-0.7210 x_std=0.1677 x_range=[-0.974,-0.205] vc_offset=60 wav_rms=0.0005 wav_peak=0.002 time=42.8ms
+[01:07:09] [INFO] chunk[003]: read_bytes=6400 in_samples=3200 out_samples=3200 fbanks=[1, 23, 80] enc_out=[1, 6, 256] enc_up=[1, 20, 256] x_mean=-0.7521 x_std=0.1615 x_range=[-0.993,-0.232] vc_offset=80 wav_rms=0.0003 wav_peak=0.001 time=46.0ms
+[01:07:09] [INFO] chunk[004]: read_bytes=6400 in_samples=3200 out_samples=3200 fbanks=[1, 23, 80] enc_out=[1, 6, 256] enc_up=[1, 20, 256] x_mean=-0.7842 x_std=0.1506 x_range=[-1.031,-0.334] vc_offset=100 wav_rms=0.0002 wav_peak=0.001 time=45.6ms
+[01:07:09] [INFO] chunk[005]: read_bytes=6400 in_samples=3200 out_samples=3200 fbanks=[1, 23, 80] enc_out=[1, 6, 256] enc_up=[1, 20, 256] x_mean=-0.7993 x_std=0.1444 x_range=[-1.029,-0.362] vc_offset=120 wav_rms=0.0002 wav_peak=0.001 time=52.7ms
+[01:07:10] [INFO] chunk[006]: read_bytes=6400 in_samples=3200 out_samples=3200 fbanks=[1, 23, 80] enc_out=[1, 6, 256] enc_up=[1, 20, 256] x_mean=-0.7295 x_std=0.1886 x_range=[-1.033,-0.034] vc_offset=140 wav_rms=0.0004 wav_peak=0.004 time=53.0ms
+[01:07:10] [INFO] chunk[007]: read_bytes=6400 in_samples=3200 out_samples=3200 fbanks=[1, 23, 80] enc_out=[1, 6, 256] enc_up=[1, 20, 256] x_mean=-0.7053 x_std=0.1781 x_range=[-1.024,-0.136] vc_offset=160 wav_rms=0.0003 wav_peak=0.001 time=48.7ms
+[01:07:10] [INFO] chunk[008]: read_bytes=6400 in_samples=3200 out_samples=3200 fbanks=[1, 23, 80] enc_out=[1, 6, 256] enc_up=[1, 20, 256] x_mean=-0.7304 x_std=0.1737 x_range=[-1.042,-0.208] vc_offset=180 wav_rms=0.0005 wav_peak=0.004 time=48.1ms
+[01:07:10] [INFO] chunk[009]: read_bytes=6400 in_samples=3200 out_samples=3200 fbanks=[1, 23, 80] enc_out=[1, 6, 256] enc_up=[1, 20, 256] x_mean=-0.3889 x_std=0.4192 x_range=[-0.990,0.788] vc_offset=200 wav_rms=0.1936 wav_peak=0.618 time=47.4ms
+[01:07:14] [INFO] chunk[030]: read_bytes=6400 in_samples=3200 out_samples=3200 fbanks=[1, 23, 80] enc_out=[1, 6, 256] enc_up=[1, 20, 256] x_mean=-0.0776 x_std=0.3074 x_range=[-0.973,0.849] vc_offset=620 wav_rms=0.1881 wav_peak=0.557 time=48.3ms
+[01:07:18] [INFO] Periodic reset at chunk 50
+[01:07:20] [INFO] chunk[060]: read_bytes=6400 in_samples=3200 out_samples=3200 fbanks=[1, 23, 80] enc_out=[1, 6, 256] enc_up=[1, 20, 256] x_mean=-0.6621 x_std=0.1782 x_range=[-1.024,-0.065] vc_offset=340 wav_rms=0.0008 wav_peak=0.003 time=52.6ms
+[01:07:21] [INFO] Cleaning up — processed 62 chunks total
+[01:07:21] [INFO] Cleanup complete
+[01:10:28] [INFO] ============================================================
+[01:10:28] [INFO] VCWorker started
+[01:10:28] [INFO]   input_device_id: 2
+[01:10:28] [INFO]   output_device_id: 1
+[01:10:28] [INFO]   steps: 2
+[01:10:28] [INFO]   timesteps: [1.0, 0.800000011920929, 0.0]
+[01:10:28] [INFO]   vc_spk_emb: shape=torch.Size([1, 256]), dtype=torch.float32, min=-0.5145, max=0.7408, mean=-0.0014
+[01:10:28] [INFO]   vc_prompt_mel: shape=torch.Size([1, 384, 80]), dtype=torch.float32, min=-0.8025, max=0.7507, mean=-0.3049
+[01:10:28] [INFO]   ASR model type: <class 'torch.jit._script.RecursiveScriptModule'>
+[01:10:28] [INFO]   VC model type: <class 'torch.jit._script.RecursiveScriptModule'>
+[01:10:28] [INFO]   Vocoder type: <class 'torch.jit._script.RecursiveScriptModule'>
+[01:10:28] [INFO]   in_stream is_active: True
+[01:10:28] [INFO]   out_stream is_active: True
+[01:10:28] [INFO]   CHUNK (samples per read): 3200
+[01:10:28] [INFO]   decoding_chunk_size: 5
+[01:10:28] [INFO] --- Warmup (5 chunks) ---
+[01:10:28] [INFO]   warmup[0]: read 6400 bytes → 3200 samples, min=-0.0085, max=0.0078, rms=0.0027
+[01:10:29] [INFO]   warmup[1]: read 6400 bytes → 3200 samples, min=-0.0082, max=0.0085, rms=0.0031
+[01:10:29] [INFO]   warmup[2]: read 6400 bytes → 3200 samples, min=-0.0077, max=0.0079, rms=0.0030
+[01:10:29] [INFO]   warmup[3]: read 6400 bytes → 3200 samples, min=-0.0071, max=0.0071, rms=0.0023
+[01:10:29] [INFO]   warmup[4]: read 6400 bytes → 3200 samples, min=-0.0088, max=0.0098, rms=0.0033
+[01:10:29] [INFO] Saved warmup audio: 16000 samples (1.00s)
+[01:10:29] [INFO] ============================================================
+[01:10:29] [INFO] Starting conversion loop
+[01:10:30] [INFO] chunk[000]: read_bytes=6400 in_samples=3920 out_samples=2720 fbanks=[1, 23, 80] enc_out=[1, 6, 256] enc_up=[1, 20, 256] x_mean=-0.7217 x_std=0.1253 x_range=[-0.983,-0.220] vc_offset=20 wav_rms=0.0005 wav_peak=0.001 time=290.0ms
+[01:10:30] [INFO] chunk[001]: read_bytes=6400 in_samples=3200 out_samples=3200 fbanks=[1, 23, 80] enc_out=[1, 6, 256] enc_up=[1, 20, 256] x_mean=-0.6378 x_std=0.1367 x_range=[-0.938,-0.174] vc_offset=40 wav_rms=0.0007 wav_peak=0.003 time=153.1ms
+[01:10:30] [INFO] chunk[002]: read_bytes=6400 in_samples=3200 out_samples=3200 fbanks=[1, 23, 80] enc_out=[1, 6, 256] enc_up=[1, 20, 256] x_mean=-0.4585 x_std=0.1300 x_range=[-0.798,-0.129] vc_offset=60 wav_rms=0.0011 wav_peak=0.007 time=38.1ms
+[01:10:30] [INFO] chunk[003]: read_bytes=6400 in_samples=3200 out_samples=3200 fbanks=[1, 23, 80] enc_out=[1, 6, 256] enc_up=[1, 20, 256] x_mean=-0.3819 x_std=0.1274 x_range=[-0.766,-0.038] vc_offset=80 wav_rms=0.0026 wav_peak=0.012 time=47.0ms
+[01:10:30] [INFO] chunk[004]: read_bytes=6400 in_samples=3200 out_samples=3200 fbanks=[1, 23, 80] enc_out=[1, 6, 256] enc_up=[1, 20, 256] x_mean=-0.5586 x_std=0.1699 x_range=[-0.946,-0.067] vc_offset=100 wav_rms=0.0011 wav_peak=0.005 time=45.3ms
+[01:10:30] [INFO] chunk[005]: read_bytes=6400 in_samples=3200 out_samples=3200 fbanks=[1, 23, 80] enc_out=[1, 6, 256] enc_up=[1, 20, 256] x_mean=-0.7073 x_std=0.1384 x_range=[-0.996,-0.225] vc_offset=120 wav_rms=0.0019 wav_peak=0.006 time=47.3ms
+[01:10:31] [INFO] chunk[006]: read_bytes=6400 in_samples=3200 out_samples=3200 fbanks=[1, 23, 80] enc_out=[1, 6, 256] enc_up=[1, 20, 256] x_mean=-0.3491 x_std=0.3615 x_range=[-1.051,0.427] vc_offset=140 wav_rms=0.0425 wav_peak=0.279 time=59.4ms
+[01:10:31] [INFO] chunk[007]: read_bytes=6400 in_samples=3200 out_samples=3200 fbanks=[1, 23, 80] enc_out=[1, 6, 256] enc_up=[1, 20, 256] x_mean=-0.1044 x_std=0.3413 x_range=[-0.956,0.530] vc_offset=160 wav_rms=0.0428 wav_peak=0.184 time=57.7ms
+[01:10:31] [INFO] chunk[008]: read_bytes=6400 in_samples=3200 out_samples=3200 fbanks=[1, 23, 80] enc_out=[1, 6, 256] enc_up=[1, 20, 256] x_mean=-0.1345 x_std=0.3637 x_range=[-0.946,0.552] vc_offset=180 wav_rms=0.0437 wav_peak=0.171 time=48.7ms
+[01:10:31] [INFO] chunk[009]: read_bytes=6400 in_samples=3200 out_samples=3200 fbanks=[1, 23, 80] enc_out=[1, 6, 256] enc_up=[1, 20, 256] x_mean=-0.0787 x_std=0.3648 x_range=[-0.970,0.596] vc_offset=200 wav_rms=0.0640 wav_peak=0.242 time=48.4ms
+[01:10:35] [INFO] chunk[030]: read_bytes=6400 in_samples=3200 out_samples=3200 fbanks=[1, 23, 80] enc_out=[1, 6, 256] enc_up=[1, 20, 256] x_mean=-0.8896 x_std=0.1356 x_range=[-1.104,-0.322] vc_offset=620 wav_rms=0.0002 wav_peak=0.001 time=49.1ms
+[01:10:38] [INFO] Cleaning up — processed 46 chunks total
+[01:10:39] [INFO] Cleanup complete
+[01:13:03] [INFO] ============================================================
+[01:13:03] [INFO] VCWorker started
+[01:13:03] [INFO]   input_device_id: 2
+[01:13:03] [INFO]   output_device_id: 1
+[01:13:03] [INFO]   steps: 2
+[01:13:03] [INFO]   timesteps: [1.0, 0.800000011920929, 0.0]
+[01:13:03] [INFO]   vc_spk_emb: shape=torch.Size([1, 256]), dtype=torch.float32, min=-0.5145, max=0.7408, mean=-0.0014
+[01:13:03] [INFO]   vc_prompt_mel: shape=torch.Size([1, 384, 80]), dtype=torch.float32, min=-0.8025, max=0.7507, mean=-0.3049
+[01:13:03] [INFO]   ASR model type: <class 'torch.jit._script.RecursiveScriptModule'>
+[01:13:03] [INFO]   VC model type: <class 'torch.jit._script.RecursiveScriptModule'>
+[01:13:03] [INFO]   Vocoder type: <class 'torch.jit._script.RecursiveScriptModule'>
+[01:13:03] [INFO]   in_stream is_active: True
+[01:13:03] [INFO]   out_stream is_active: True
+[01:13:03] [INFO]   CHUNK (samples per read): 3200
+[01:13:03] [INFO]   decoding_chunk_size: 5
+[01:13:03] [INFO] --- Warmup (5 chunks) ---
+[01:13:03] [INFO]   warmup[0]: read 6400 bytes → 3200 samples, min=-0.0066, max=0.0062, rms=0.0019
+[01:13:03] [INFO]   warmup[1]: read 6400 bytes → 3200 samples, min=-0.0059, max=0.0064, rms=0.0024
+[01:13:03] [INFO]   warmup[2]: read 6400 bytes → 3200 samples, min=-0.0078, max=0.0074, rms=0.0026
+[01:13:03] [INFO]   warmup[3]: read 6400 bytes → 3200 samples, min=-0.0056, max=0.0095, rms=0.0023
+[01:13:04] [INFO]   warmup[4]: read 6400 bytes → 3200 samples, min=-0.0062, max=0.0071, rms=0.0021
+[01:13:04] [INFO] Saved warmup audio: 16000 samples (1.00s)
+[01:13:04] [INFO] ============================================================
+[01:13:04] [INFO] Starting conversion loop
+[01:13:04] [INFO] chunk[000]: read_bytes=6400 in_samples=3920 out_samples=2720 fbanks=[1, 23, 80] enc_out=[1, 6, 256] enc_up=[1, 20, 256] x_mean=-0.7275 x_std=0.1254 x_range=[-0.985,-0.211] vc_offset=20 wav_rms=0.0004 wav_peak=0.002 time=290.5ms
+[01:13:04] [INFO] chunk[001]: read_bytes=6400 in_samples=3200 out_samples=3200 fbanks=[1, 23, 80] enc_out=[1, 6, 256] enc_up=[1, 20, 256] x_mean=-0.7156 x_std=0.1230 x_range=[-0.987,-0.219] vc_offset=40 wav_rms=0.0004 wav_peak=0.001 time=145.1ms
+[01:13:04] [INFO] chunk[002]: read_bytes=6400 in_samples=3200 out_samples=3200 fbanks=[1, 23, 80] enc_out=[1, 6, 256] enc_up=[1, 20, 256] x_mean=-0.7091 x_std=0.1328 x_range=[-1.006,-0.197] vc_offset=60 wav_rms=0.0008 wav_peak=0.002 time=38.5ms
+[01:13:05] [INFO] chunk[003]: read_bytes=6400 in_samples=3200 out_samples=3200 fbanks=[1, 23, 80] enc_out=[1, 6, 256] enc_up=[1, 20, 256] x_mean=-0.7093 x_std=0.1357 x_range=[-0.992,-0.191] vc_offset=80 wav_rms=0.0007 wav_peak=0.002 time=43.3ms
+[01:13:05] [INFO] chunk[004]: read_bytes=6400 in_samples=3200 out_samples=3200 fbanks=[1, 23, 80] enc_out=[1, 6, 256] enc_up=[1, 20, 256] x_mean=-0.7040 x_std=0.1314 x_range=[-1.001,-0.187] vc_offset=100 wav_rms=0.0009 wav_peak=0.003 time=43.8ms
+[01:13:05] [INFO] chunk[005]: read_bytes=6400 in_samples=3200 out_samples=3200 fbanks=[1, 23, 80] enc_out=[1, 6, 256] enc_up=[1, 20, 256] x_mean=-0.6894 x_std=0.1395 x_range=[-1.009,-0.178] vc_offset=120 wav_rms=0.0010 wav_peak=0.003 time=47.9ms
+[01:13:05] [INFO] chunk[006]: read_bytes=6400 in_samples=3200 out_samples=3200 fbanks=[1, 23, 80] enc_out=[1, 6, 256] enc_up=[1, 20, 256] x_mean=-0.6535 x_std=0.1530 x_range=[-1.027,-0.163] vc_offset=140 wav_rms=0.0011 wav_peak=0.004 time=47.2ms
+[01:13:05] [INFO] chunk[007]: read_bytes=6400 in_samples=3200 out_samples=3200 fbanks=[1, 23, 80] enc_out=[1, 6, 256] enc_up=[1, 20, 256] x_mean=-0.5434 x_std=0.3282 x_range=[-0.998,0.481] vc_offset=160 wav_rms=0.0313 wav_peak=0.239 time=44.5ms
+[01:13:06] [INFO] chunk[008]: read_bytes=6400 in_samples=3200 out_samples=3200 fbanks=[1, 23, 80] enc_out=[1, 6, 256] enc_up=[1, 20, 256] x_mean=-0.0330 x_std=0.3275 x_range=[-0.859,0.597] vc_offset=180 wav_rms=0.0639 wav_peak=0.230 time=48.6ms
+[01:13:06] [INFO] chunk[009]: read_bytes=6400 in_samples=3200 out_samples=3200 fbanks=[1, 23, 80] enc_out=[1, 6, 256] enc_up=[1, 20, 256] x_mean=-0.0743 x_std=0.3415 x_range=[-0.919,0.605] vc_offset=200 wav_rms=0.0593 wav_peak=0.284 time=39.3ms
+[01:13:10] [INFO] chunk[030]: read_bytes=6400 in_samples=3200 out_samples=3200 fbanks=[1, 23, 80] enc_out=[1, 6, 256] enc_up=[1, 20, 256] x_mean=-0.8695 x_std=0.1523 x_range=[-1.082,-0.125] vc_offset=620 wav_rms=0.0003 wav_peak=0.003 time=54.7ms
+[01:13:14] [INFO] Periodic reset at chunk 50
+[01:13:16] [INFO] chunk[060]: read_bytes=6400 in_samples=3200 out_samples=3200 fbanks=[1, 23, 80] enc_out=[1, 6, 256] enc_up=[1, 20, 256] x_mean=-0.7529 x_std=0.1631 x_range=[-1.037,-0.082] vc_offset=340 wav_rms=0.0027 wav_peak=0.008 time=56.3ms
+[01:13:17] [INFO] Cleaning up — processed 65 chunks total
+[01:13:17] [INFO] Cleanup complete
+[15:16:40] [INFO] ============================================================
+[15:16:40] [INFO] VCWorker started
+[15:16:40] [INFO]   input_device_id: 2
+[15:16:40] [INFO]   output_device_id: 1
+[15:16:40] [INFO]   steps: 2
+[15:16:40] [INFO]   timesteps: [1.0, 0.800000011920929, 0.0]
+[15:16:40] [INFO]   vc_spk_emb: shape=torch.Size([256]), dtype=torch.float32, min=-0.4459, max=0.4427, mean=-0.0152
+[15:16:40] [INFO]   vc_prompt_mel: shape=torch.Size([80, 1, 801]), dtype=torch.float32, min=-0.8028, max=0.9100, mean=-0.0236
+[15:16:40] [INFO]   ASR model type: <class 'torch.jit._script.RecursiveScriptModule'>
+[15:16:40] [INFO]   VC model type: <class 'torch.jit._script.RecursiveScriptModule'>
+[15:16:40] [INFO]   Vocoder type: <class 'torch.jit._script.RecursiveScriptModule'>
+[15:16:40] [INFO]   in_stream is_active: True
+[15:16:40] [INFO]   out_stream is_active: True
+[15:16:40] [INFO]   CHUNK (samples per read): 3200
+[15:16:40] [INFO]   decoding_chunk_size: 5
+[15:16:40] [INFO] --- Warmup (5 chunks) ---
+[15:16:40] [INFO]   warmup[0]: read 6400 bytes → 3200 samples, min=-0.0726, max=0.0543, rms=0.0182
+[15:16:40] [INFO]   warmup[1]: read 6400 bytes → 3200 samples, min=-0.0535, max=0.0643, rms=0.0200
+[15:16:40] [INFO]   warmup[2]: read 6400 bytes → 3200 samples, min=-0.0656, max=0.0500, rms=0.0171
+[15:16:40] [INFO]   warmup[3]: read 6400 bytes → 3200 samples, min=-0.0523, max=0.0591, rms=0.0180
+[15:16:41] [INFO]   warmup[4]: read 6400 bytes → 3200 samples, min=-0.0501, max=0.0473, rms=0.0171
+[15:16:41] [INFO] Saved warmup audio: 16000 samples (1.00s)
+[15:16:41] [INFO] ============================================================
+[15:16:41] [INFO] Starting conversion loop
+[15:16:41] [ERROR] FATAL ERROR: Traceback (most recent call last):
+  File "/Users/ahs/Documents/GitHub/MeanVC/main.py", line 657, in run
+    u, tmp_kv_cache = m['vc'](
+                      ^^^^^^^^
+  File "/Users/ahs/miniconda3/envs/meanvc/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1736, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ahs/miniconda3/envs/meanvc/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1747, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: The following operation failed in the TorchScript interpreter.
+Traceback of TorchScript, serialized code (most recent call last):
+  File "code/__torch__/f5_tts/model/backbones/dit.py", line 28, in forward
+    kv_cache: Optional[List[Optional[Tuple[Tensor, Tensor]]]]=None) -> Tuple[Tensor, List[Optional[Tuple[Tensor, Tensor]]]]:
+    seq_len = (torch.size(x))[1]
+    spks_ = torch.expand(torch.unsqueeze(spks, 1), [-1, (torch.size(cond))[1], -1])
+            ~~~~~~~~~~~~ <--- HERE
+    t_time_embed = self.t_time_embed
+    t0 = (t_time_embed).forward(t, )
+
+Traceback of TorchScript, original code (most recent call last):
+  File "/home/work_nfs9/gbma/code/one-step-vc/vc_meanflow_7_160ms_jit/f5_tts/model/backbones/dit.py", line 316, in forward
+    
+        # spks_ = spks.unsqueeze(1).repeat(1, cond.shape[1], 1)
+        spks_ = spks.unsqueeze(1).expand(-1, cond.shape[1], -1)
+                ~~~~~~~~~~~~~~~~~~~~~~~ <--- HERE
+        
+        t = self.t_time_embed(t)
+RuntimeError: The expanded size of the tensor (20) must match the existing size (256) at non-singleton dimension 1.  Target sizes: [-1, 20, -1].  Tensor sizes: [256, 1]
+
+
+[15:16:41] [INFO] Cleaning up — processed 0 chunks total
+[15:16:42] [INFO] Cleanup complete
+[15:18:56] [INFO] ============================================================
+[15:18:56] [INFO] VCWorker started
+[15:18:56] [INFO]   input_device_id: 2
+[15:18:56] [INFO]   output_device_id: 1
+[15:18:56] [INFO]   steps: 2
+[15:18:56] [INFO]   timesteps: [1.0, 0.800000011920929, 0.0]
+[15:18:56] [INFO]   vc_spk_emb: shape=torch.Size([1, 256]), dtype=torch.float32, min=-0.4459, max=0.4427, mean=-0.0152
+[15:18:56] [INFO]   vc_prompt_mel: shape=torch.Size([1, 801, 80]), dtype=torch.float32, min=-0.8028, max=0.9100, mean=-0.0236
+[15:18:56] [INFO]   ASR model type: <class 'torch.jit._script.RecursiveScriptModule'>
+[15:18:56] [INFO]   VC model type: <class 'torch.jit._script.RecursiveScriptModule'>
+[15:18:56] [INFO]   Vocoder type: <class 'torch.jit._script.RecursiveScriptModule'>
+[15:18:56] [INFO]   in_stream is_active: True
+[15:18:56] [INFO]   out_stream is_active: True
+[15:18:56] [INFO]   CHUNK (samples per read): 3200
+[15:18:56] [INFO]   decoding_chunk_size: 5
+[15:18:56] [INFO] --- Warmup (5 chunks) ---
+[15:18:56] [INFO]   warmup[0]: read 6400 bytes → 3200 samples, min=-0.1135, max=0.0902, rms=0.0221
+[15:18:56] [INFO]   warmup[1]: read 6400 bytes → 3200 samples, min=-0.1176, max=0.1104, rms=0.0313
+[15:18:56] [INFO]   warmup[2]: read 6400 bytes → 3200 samples, min=-0.1037, max=0.1018, rms=0.0339
+[15:18:57] [INFO]   warmup[3]: read 6400 bytes → 3200 samples, min=-0.1059, max=0.1226, rms=0.0386
+[15:18:57] [INFO]   warmup[4]: read 6400 bytes → 3200 samples, min=-0.1124, max=0.1432, rms=0.0346
+[15:18:57] [INFO] Saved warmup audio: 16000 samples (1.00s)
+[15:18:57] [INFO] ============================================================
+[15:18:57] [INFO] Starting conversion loop
+[15:18:58] [INFO] chunk[000]: read_bytes=6400 in_samples=3920 out_samples=2720 fbanks=[1, 23, 80] enc_out=[1, 6, 256] enc_up=[1, 20, 256] x_mean=-0.4238 x_std=0.1464 x_range=[-0.922,0.074] vc_offset=20 wav_rms=0.0040 wav_peak=0.018 time=298.3ms
+[15:18:58] [INFO] chunk[001]: read_bytes=6400 in_samples=3200 out_samples=3200 fbanks=[1, 23, 80] enc_out=[1, 6, 256] enc_up=[1, 20, 256] x_mean=-0.2948 x_std=0.2004 x_range=[-0.894,0.247] vc_offset=40 wav_rms=0.0048 wav_peak=0.022 time=150.8ms
+[15:18:58] [INFO] chunk[002]: read_bytes=6400 in_samples=3200 out_samples=3200 fbanks=[1, 23, 80] enc_out=[1, 6, 256] enc_up=[1, 20, 256] x_mean=-0.4073 x_std=0.1626 x_range=[-0.853,0.067] vc_offset=60 wav_rms=0.0034 wav_peak=0.032 time=43.2ms
+[15:18:58] [INFO] chunk[003]: read_bytes=6400 in_samples=3200 out_samples=3200 fbanks=[1, 23, 80] enc_out=[1, 6, 256] enc_up=[1, 20, 256] x_mean=-0.5032 x_std=0.1350 x_range=[-0.917,-0.100] vc_offset=80 wav_rms=0.0013 wav_peak=0.005 time=60.6ms
+[15:18:58] [INFO] chunk[004]: read_bytes=6400 in_samples=3200 out_samples=3200 fbanks=[1, 23, 80] enc_out=[1, 6, 256] enc_up=[1, 20, 256] x_mean=-0.5638 x_std=0.1308 x_range=[-0.869,-0.157] vc_offset=100 wav_rms=0.0027 wav_peak=0.009 time=41.1ms
+[15:18:58] [INFO] chunk[005]: read_bytes=6400 in_samples=3200 out_samples=3200 fbanks=[1, 23, 80] enc_out=[1, 6, 256] enc_up=[1, 20, 256] x_mean=-0.6153 x_std=0.1327 x_range=[-0.937,-0.150] vc_offset=120 wav_rms=0.0025 wav_peak=0.009 time=40.4ms
+[15:18:58] [INFO] chunk[006]: read_bytes=6400 in_samples=3200 out_samples=3200 fbanks=[1, 23, 80] enc_out=[1, 6, 256] enc_up=[1, 20, 256] x_mean=-0.6373 x_std=0.1214 x_range=[-0.959,-0.200] vc_offset=140 wav_rms=0.0025 wav_peak=0.010 time=60.6ms
+[15:18:59] [INFO] chunk[007]: read_bytes=6400 in_samples=3200 out_samples=3200 fbanks=[1, 23, 80] enc_out=[1, 6, 256] enc_up=[1, 20, 256] x_mean=-0.3974 x_std=0.3476 x_range=[-0.971,0.605] vc_offset=160 wav_rms=0.0840 wav_peak=0.387 time=55.5ms
+[15:18:59] [INFO] chunk[008]: read_bytes=6400 in_samples=3200 out_samples=3200 fbanks=[1, 23, 80] enc_out=[1, 6, 256] enc_up=[1, 20, 256] x_mean=-0.3366 x_std=0.2832 x_range=[-0.950,0.641] vc_offset=180 wav_rms=0.0250 wav_peak=0.190 time=47.1ms
+[15:18:59] [INFO] chunk[009]: read_bytes=6400 in_samples=3200 out_samples=3200 fbanks=[1, 23, 80] enc_out=[1, 6, 256] enc_up=[1, 20, 256] x_mean=0.0564 x_std=0.3491 x_range=[-0.801,0.755] vc_offset=200 wav_rms=0.2062 wav_peak=0.622 time=41.0ms
+[15:19:03] [INFO] chunk[030]: read_bytes=6400 in_samples=3200 out_samples=3200 fbanks=[1, 23, 80] enc_out=[1, 6, 256] enc_up=[1, 20, 256] x_mean=-0.4167 x_std=0.2171 x_range=[-0.971,0.533] vc_offset=620 wav_rms=0.0034 wav_peak=0.024 time=73.0ms
+[15:19:07] [INFO] Periodic reset at chunk 50
+[15:19:09] [INFO] chunk[060]: read_bytes=6400 in_samples=3200 out_samples=3200 fbanks=[1, 23, 80] enc_out=[1, 6, 256] enc_up=[1, 20, 256] x_mean=-0.3005 x_std=0.3250 x_range=[-0.984,0.527] vc_offset=340 wav_rms=0.0394 wav_peak=0.327 time=48.2ms
+[15:19:15] [INFO] chunk[090]: read_bytes=6400 in_samples=3200 out_samples=3200 fbanks=[1, 23, 80] enc_out=[1, 6, 256] enc_up=[1, 20, 256] x_mean=-0.5465 x_std=0.2000 x_range=[-0.968,0.095] vc_offset=940 wav_rms=0.0018 wav_peak=0.018 time=55.4ms
+[15:19:17] [INFO] Periodic reset at chunk 100
+[15:19:21] [INFO] chunk[120]: read_bytes=6400 in_samples=3200 out_samples=3200 fbanks=[1, 23, 80] enc_out=[1, 6, 256] enc_up=[1, 20, 256] x_mean=-0.1503 x_std=0.2521 x_range=[-0.882,0.649] vc_offset=540 wav_rms=0.0458 wav_peak=0.180 time=46.7ms
+[15:19:27] [INFO] Periodic reset at chunk 150
+[15:19:27] [INFO] chunk[150]: read_bytes=6400 in_samples=3200 out_samples=3200 fbanks=[1, 23, 80] enc_out=[1, 6, 256] enc_up=[1, 20, 256] x_mean=0.1328 x_std=0.2844 x_range=[-0.848,0.745] vc_offset=140 wav_rms=0.1457 wav_peak=0.760 time=44.2ms
+[15:19:33] [INFO] chunk[180]: read_bytes=6400 in_samples=3200 out_samples=3200 fbanks=[1, 23, 80] enc_out=[1, 6, 256] enc_up=[1, 20, 256] x_mean=-0.2363 x_std=0.2039 x_range=[-0.882,0.157] vc_offset=740 wav_rms=0.0091 wav_peak=0.038 time=46.6ms
+[15:19:37] [INFO] Periodic reset at chunk 200
+[15:19:39] [INFO] chunk[210]: read_bytes=6400 in_samples=3200 out_samples=3200 fbanks=[1, 23, 80] enc_out=[1, 6, 256] enc_up=[1, 20, 256] x_mean=-0.4650 x_std=0.1509 x_range=[-0.894,-0.059] vc_offset=340 wav_rms=0.0016 wav_peak=0.005 time=51.7ms
+[15:19:40] [INFO] Cleaning up — processed 217 chunks total
+[15:19:41] [INFO] Cleanup complete
+[15:20:25] [INFO] ============================================================
+[15:20:25] [INFO] VCWorker started
+[15:20:25] [INFO]   input_device_id: 2
+[15:20:25] [INFO]   output_device_id: 1
+[15:20:25] [INFO]   steps: 2
+[15:20:25] [INFO]   timesteps: [1.0, 0.800000011920929, 0.0]
+[15:20:25] [INFO]   vc_spk_emb: shape=torch.Size([1, 256]), dtype=torch.float32, min=-0.3615, max=0.4297, mean=-0.0102
+[15:20:25] [INFO]   vc_prompt_mel: shape=torch.Size([1, 668, 80]), dtype=torch.float32, min=-0.8038, max=0.9463, mean=-0.0262
+[15:20:25] [INFO]   ASR model type: <class 'torch.jit._script.RecursiveScriptModule'>
+[15:20:25] [INFO]   VC model type: <class 'torch.jit._script.RecursiveScriptModule'>
+[15:20:25] [INFO]   Vocoder type: <class 'torch.jit._script.RecursiveScriptModule'>
+[15:20:25] [INFO]   in_stream is_active: True
+[15:20:25] [INFO]   out_stream is_active: True
+[15:20:25] [INFO]   CHUNK (samples per read): 3200
+[15:20:25] [INFO]   decoding_chunk_size: 5
+[15:20:25] [INFO] --- Warmup (5 chunks) ---
+[15:20:26] [INFO]   warmup[0]: read 6400 bytes → 3200 samples, min=-0.1324, max=0.1170, rms=0.0341
+[15:20:26] [INFO]   warmup[1]: read 6400 bytes → 3200 samples, min=-0.0975, max=0.1051, rms=0.0298
+[15:20:26] [INFO]   warmup[2]: read 6400 bytes → 3200 samples, min=-0.1052, max=0.1243, rms=0.0347
+[15:20:26] [INFO]   warmup[3]: read 6400 bytes → 3200 samples, min=-0.1169, max=0.1237, rms=0.0346
+[15:20:26] [INFO]   warmup[4]: read 6400 bytes → 3200 samples, min=-0.0974, max=0.1048, rms=0.0330
+[15:20:26] [INFO] Saved warmup audio: 16000 samples (1.00s)
+[15:20:26] [INFO] ============================================================
+[15:20:26] [INFO] Starting conversion loop
+[15:20:27] [INFO] chunk[000]: read_bytes=6400 in_samples=3920 out_samples=2720 fbanks=[1, 23, 80] enc_out=[1, 6, 256] enc_up=[1, 20, 256] x_mean=-0.6912 x_std=0.1984 x_range=[-0.969,-0.022] vc_offset=20 wav_rms=0.0007 wav_peak=0.002 time=278.2ms
+[15:20:27] [INFO] chunk[001]: read_bytes=6400 in_samples=3200 out_samples=3200 fbanks=[1, 23, 80] enc_out=[1, 6, 256] enc_up=[1, 20, 256] x_mean=-0.1589 x_std=0.3610 x_range=[-0.908,0.814] vc_offset=40 wav_rms=0.3092 wav_peak=0.817 time=146.8ms
+[15:20:27] [INFO] chunk[002]: read_bytes=6400 in_samples=3200 out_samples=3200 fbanks=[1, 23, 80] enc_out=[1, 6, 256] enc_up=[1, 20, 256] x_mean=0.0157 x_std=0.2913 x_range=[-0.882,0.832] vc_offset=60 wav_rms=0.2733 wav_peak=0.505 time=40.2ms
+[15:20:27] [INFO] chunk[003]: read_bytes=6400 in_samples=3200 out_samples=3200 fbanks=[1, 23, 80] enc_out=[1, 6, 256] enc_up=[1, 20, 256] x_mean=0.1182 x_std=0.2515 x_range=[-0.635,0.804] vc_offset=80 wav_rms=0.2336 wav_peak=0.608 time=41.2ms
+[15:20:27] [INFO] chunk[004]: read_bytes=6400 in_samples=3200 out_samples=3200 fbanks=[1, 23, 80] enc_out=[1, 6, 256] enc_up=[1, 20, 256] x_mean=0.1101 x_std=0.2404 x_range=[-0.526,0.853] vc_offset=100 wav_rms=0.1854 wav_peak=0.757 time=42.5ms
+[15:20:28] [INFO] chunk[005]: read_bytes=6400 in_samples=3200 out_samples=3200 fbanks=[1, 23, 80] enc_out=[1, 6, 256] enc_up=[1, 20, 256] x_mean=0.1678 x_std=0.2268 x_range=[-0.488,0.850] vc_offset=120 wav_rms=0.2715 wav_peak=0.761 time=46.7ms
+[15:20:28] [INFO] chunk[006]: read_bytes=6400 in_samples=3200 out_samples=3200 fbanks=[1, 23, 80] enc_out=[1, 6, 256] enc_up=[1, 20, 256] x_mean=0.1578 x_std=0.2425 x_range=[-0.933,0.811] vc_offset=140 wav_rms=0.2237 wav_peak=0.655 time=46.3ms
+[15:20:28] [INFO] chunk[007]: read_bytes=6400 in_samples=3200 out_samples=3200 fbanks=[1, 23, 80] enc_out=[1, 6, 256] enc_up=[1, 20, 256] x_mean=-0.1869 x_std=0.2500 x_range=[-0.869,0.680] vc_offset=160 wav_rms=0.0392 wav_peak=0.281 time=45.0ms
+[15:20:28] [INFO] chunk[008]: read_bytes=6400 in_samples=3200 out_samples=3200 fbanks=[1, 23, 80] enc_out=[1, 6, 256] enc_up=[1, 20, 256] x_mean=-0.3411 x_std=0.3543 x_range=[-0.969,0.767] vc_offset=180 wav_rms=0.0220 wav_peak=0.239 time=50.8ms
+[15:20:28] [INFO] chunk[009]: read_bytes=6400 in_samples=3200 out_samples=3200 fbanks=[1, 23, 80] enc_out=[1, 6, 256] enc_up=[1, 20, 256] x_mean=-0.0039 x_std=0.2112 x_range=[-0.927,0.594] vc_offset=200 wav_rms=0.0787 wav_peak=0.432 time=44.4ms
+[15:20:33] [INFO] chunk[030]: read_bytes=6400 in_samples=3200 out_samples=3200 fbanks=[1, 23, 80] enc_out=[1, 6, 256] enc_up=[1, 20, 256] x_mean=0.0326 x_std=0.3518 x_range=[-0.830,0.863] vc_offset=620 wav_rms=0.1993 wav_peak=0.790 time=53.1ms
+[15:20:36] [INFO] Periodic reset at chunk 50
+[15:20:39] [INFO] chunk[060]: read_bytes=6400 in_samples=3200 out_samples=3200 fbanks=[1, 23, 80] enc_out=[1, 6, 256] enc_up=[1, 20, 256] x_mean=0.0463 x_std=0.2614 x_range=[-0.616,0.968] vc_offset=340 wav_rms=0.4274 wav_peak=1.188 time=45.8ms
+[15:20:43] [INFO] Cleaning up — processed 85 chunks total
+[15:20:44] [INFO] Cleanup complete
+[15:28:40] [INFO] ============================================================
+[15:28:40] [INFO] VCWorker started
+[15:28:40] [INFO]   input_device_id: 2
+[15:28:40] [INFO]   output_device_id: 1
+[15:28:40] [INFO]   steps: 2
+[15:28:40] [INFO]   timesteps: [1.0, 0.800000011920929, 0.0]
+[15:28:40] [INFO]   vc_spk_emb: shape=torch.Size([1, 256]), dtype=torch.float32, min=-0.3615, max=0.4297, mean=-0.0102
+[15:28:40] [INFO]   vc_prompt_mel: shape=torch.Size([1, 668, 80]), dtype=torch.float32, min=-0.8038, max=0.9463, mean=-0.0262
+[15:28:40] [INFO]   ASR model type: <class 'torch.jit._script.RecursiveScriptModule'>
+[15:28:40] [INFO]   VC model type: <class 'torch.jit._script.RecursiveScriptModule'>
+[15:28:40] [INFO]   Vocoder type: <class 'torch.jit._script.RecursiveScriptModule'>
+[15:28:40] [INFO]   in_stream is_active: True
+[15:28:40] [INFO]   out_stream is_active: True
+[15:28:40] [INFO]   CHUNK (samples per read): 3200
+[15:28:40] [INFO]   decoding_chunk_size: 5
+[15:28:40] [INFO] --- Warmup (5 chunks) ---
+[15:28:40] [INFO]   warmup[0]: read 6400 bytes → 3200 samples, min=-0.1291, max=0.2157, rms=0.0347
+[15:28:40] [INFO]   warmup[1]: read 6400 bytes → 3200 samples, min=-0.1397, max=0.1914, rms=0.0446
+[15:28:40] [INFO]   warmup[2]: read 6400 bytes → 3200 samples, min=-0.1204, max=0.1317, rms=0.0359
+[15:28:40] [INFO]   warmup[3]: read 6400 bytes → 3200 samples, min=-0.1722, max=0.1989, rms=0.0483
+[15:28:41] [INFO]   warmup[4]: read 6400 bytes → 3200 samples, min=-0.0899, max=0.0845, rms=0.0305
+[15:28:41] [INFO] Saved warmup audio: 16000 samples (1.00s)
+[15:28:41] [INFO] ============================================================
+[15:28:41] [INFO] Starting conversion loop
+[15:28:41] [INFO] chunk[000]: read_bytes=6400 in_samples=3920 out_samples=2720 fbanks=[1, 23, 80] enc_out=[1, 6, 256] enc_up=[1, 20, 256] x_mean=-0.6736 x_std=0.1681 x_range=[-0.946,-0.154] vc_offset=20 wav_rms=0.0006 wav_peak=0.002 time=295.0ms
+[15:28:41] [INFO] chunk[001]: read_bytes=6400 in_samples=3200 out_samples=3200 fbanks=[1, 23, 80] enc_out=[1, 6, 256] enc_up=[1, 20, 256] x_mean=-0.4037 x_std=0.2891 x_range=[-0.902,0.230] vc_offset=40 wav_rms=0.0042 wav_peak=0.034 time=159.0ms
+[15:28:42] [INFO] chunk[002]: read_bytes=6400 in_samples=3200 out_samples=3200 fbanks=[1, 23, 80] enc_out=[1, 6, 256] enc_up=[1, 20, 256] x_mean=-0.1319 x_std=0.1334 x_range=[-0.710,0.214] vc_offset=60 wav_rms=0.0103 wav_peak=0.107 time=44.5ms
+[15:28:42] [INFO] chunk[003]: read_bytes=6400 in_samples=3200 out_samples=3200 fbanks=[1, 23, 80] enc_out=[1, 6, 256] enc_up=[1, 20, 256] x_mean=-0.1192 x_std=0.1740 x_range=[-0.949,0.266] vc_offset=80 wav_rms=0.0110 wav_peak=0.042 time=46.8ms
+[15:28:42] [INFO] chunk[004]: read_bytes=6400 in_samples=3200 out_samples=3200 fbanks=[1, 23, 80] enc_out=[1, 6, 256] enc_up=[1, 20, 256] x_mean=-0.6352 x_std=0.1942 x_range=[-1.017,0.111] vc_offset=100 wav_rms=0.0047 wav_peak=0.075 time=41.1ms
+[15:28:42] [INFO] chunk[005]: read_bytes=6400 in_samples=3200 out_samples=3200 fbanks=[1, 23, 80] enc_out=[1, 6, 256] enc_up=[1, 20, 256] x_mean=-0.8507 x_std=0.1124 x_range=[-1.044,-0.382] vc_offset=120 wav_rms=0.0002 wav_peak=0.002 time=52.8ms
+[15:28:42] [INFO] chunk[006]: read_bytes=6400 in_samples=3200 out_samples=3200 fbanks=[1, 23, 80] enc_out=[1, 6, 256] enc_up=[1, 20, 256] x_mean=-0.9538 x_std=0.0583 x_range=[-1.125,-0.627] vc_offset=140 wav_rms=0.0001 wav_peak=0.000 time=42.4ms
+[15:28:42] [INFO] chunk[007]: read_bytes=6400 in_samples=3200 out_samples=3200 fbanks=[1, 23, 80] enc_out=[1, 6, 256] enc_up=[1, 20, 256] x_mean=-0.9758 x_std=0.0673 x_range=[-1.183,-0.519] vc_offset=160 wav_rms=0.0001 wav_peak=0.000 time=54.2ms
+[15:28:43] [INFO] chunk[008]: read_bytes=6400 in_samples=3200 out_samples=3200 fbanks=[1, 23, 80] enc_out=[1, 6, 256] enc_up=[1, 20, 256] x_mean=-0.3934 x_std=0.4212 x_range=[-1.079,0.710] vc_offset=180 wav_rms=0.1878 wav_peak=0.561 time=45.8ms
+[15:28:43] [INFO] chunk[009]: read_bytes=6400 in_samples=3200 out_samples=3200 fbanks=[1, 23, 80] enc_out=[1, 6, 256] enc_up=[1, 20, 256] x_mean=-0.3235 x_std=0.3926 x_range=[-1.016,0.705] vc_offset=200 wav_rms=0.1008 wav_peak=0.273 time=52.4ms
+[15:28:47] [INFO] chunk[030]: read_bytes=6400 in_samples=3200 out_samples=3200 fbanks=[1, 23, 80] enc_out=[1, 6, 256] enc_up=[1, 20, 256] x_mean=-0.1702 x_std=0.3060 x_range=[-0.851,0.755] vc_offset=620 wav_rms=0.1970 wav_peak=0.438 time=47.5ms
+[15:28:48] [INFO] Cleaning up — processed 36 chunks total
+[15:28:49] [INFO] Cleanup complete
+[15:30:26] [INFO] ============================================================
+[15:30:26] [INFO] VCWorker started
+[15:30:26] [INFO]   input_device_id: 2
+[15:30:26] [INFO]   output_device_id: 1
+[15:30:26] [INFO]   steps: 2
+[15:30:26] [INFO]   timesteps: [1.0, 0.800000011920929, 0.0]
+[15:30:26] [INFO]   vc_spk_emb: shape=torch.Size([1, 256]), dtype=torch.float32, min=-0.3615, max=0.4297, mean=-0.0102
+[15:30:26] [INFO]   vc_prompt_mel: shape=torch.Size([1, 668, 80]), dtype=torch.float32, min=-0.8038, max=0.9463, mean=-0.0262
+[15:30:26] [INFO]   ASR model type: <class 'torch.jit._script.RecursiveScriptModule'>
+[15:30:26] [INFO]   VC model type: <class 'torch.jit._script.RecursiveScriptModule'>
+[15:30:26] [INFO]   Vocoder type: <class 'torch.jit._script.RecursiveScriptModule'>
+[15:30:26] [INFO]   in_stream is_active: True
+[15:30:26] [INFO]   out_stream is_active: True
+[15:30:26] [INFO]   CHUNK (samples per read): 3200
+[15:30:26] [INFO]   decoding_chunk_size: 5
+[15:30:26] [INFO] --- Warmup (5 chunks) ---
+[15:30:26] [INFO]   warmup[0]: read 6400 bytes → 3200 samples, min=-0.2233, max=0.2052, rms=0.0547
+[15:30:27] [INFO]   warmup[1]: read 6400 bytes → 3200 samples, min=-0.2173, max=0.1750, rms=0.0547
+[15:30:27] [INFO]   warmup[2]: read 6400 bytes → 3200 samples, min=-0.1620, max=0.1548, rms=0.0485
+[15:30:27] [INFO]   warmup[3]: read 6400 bytes → 3200 samples, min=-0.1791, max=0.1580, rms=0.0510
+[15:30:27] [INFO]   warmup[4]: read 6400 bytes → 3200 samples, min=-0.2055, max=0.1938, rms=0.0504
+[15:30:27] [INFO] Saved warmup audio: 16000 samples (1.00s)
+[15:30:27] [INFO] ============================================================
+[15:30:27] [INFO] Starting conversion loop
+[15:30:28] [INFO] chunk[000]: read_bytes=6400 in_samples=3920 out_samples=2720 fbanks=[1, 23, 80] enc_out=[1, 6, 256] enc_up=[1, 20, 256] x_mean=-0.0298 x_std=0.3240 x_range=[-0.783,0.876] vc_offset=20 wav_rms=0.2081 wav_peak=0.700 time=276.6ms
+[15:30:28] [INFO] chunk[001]: read_bytes=6400 in_samples=3200 out_samples=3200 fbanks=[1, 23, 80] enc_out=[1, 6, 256] enc_up=[1, 20, 256] x_mean=0.1558 x_std=0.2454 x_range=[-0.756,0.951] vc_offset=40 wav_rms=0.3731 wav_peak=0.887 time=152.9ms
+[15:30:28] [INFO] chunk[002]: read_bytes=6400 in_samples=3200 out_samples=3200 fbanks=[1, 23, 80] enc_out=[1, 6, 256] enc_up=[1, 20, 256] x_mean=0.0116 x_std=0.3523 x_range=[-0.883,0.872] vc_offset=60 wav_rms=0.3963 wav_peak=0.992 time=40.9ms
+[15:30:28] [INFO] chunk[003]: read_bytes=6400 in_samples=3200 out_samples=3200 fbanks=[1, 23, 80] enc_out=[1, 6, 256] enc_up=[1, 20, 256] x_mean=0.0691 x_std=0.3152 x_range=[-0.986,0.890] vc_offset=80 wav_rms=0.4220 wav_peak=1.017 time=40.3ms
+[15:30:28] [INFO] chunk[004]: read_bytes=6400 in_samples=3200 out_samples=3200 fbanks=[1, 23, 80] enc_out=[1, 6, 256] enc_up=[1, 20, 256] x_mean=-0.0396 x_std=0.3864 x_range=[-0.955,0.894] vc_offset=100 wav_rms=0.3621 wav_peak=0.950 time=39.4ms
+[15:30:29] [INFO] chunk[005]: read_bytes=6400 in_samples=3200 out_samples=3200 fbanks=[1, 23, 80] enc_out=[1, 6, 256] enc_up=[1, 20, 256] x_mean=-0.2847 x_std=0.4440 x_range=[-1.068,0.901] vc_offset=120 wav_rms=0.3310 wav_peak=0.970 time=41.1ms
+[15:30:29] [INFO] chunk[006]: read_bytes=6400 in_samples=3200 out_samples=3200 fbanks=[1, 23, 80] enc_out=[1, 6, 256] enc_up=[1, 20, 256] x_mean=-0.0499 x_std=0.3461 x_range=[-0.986,0.801] vc_offset=140 wav_rms=0.2138 wav_peak=0.577 time=41.1ms
+[15:30:29] [INFO] chunk[007]: read_bytes=6400 in_samples=3200 out_samples=3200 fbanks=[1, 23, 80] enc_out=[1, 6, 256] enc_up=[1, 20, 256] x_mean=0.0365 x_std=0.2494 x_range=[-0.721,0.718] vc_offset=160 wav_rms=0.0943 wav_peak=0.278 time=39.3ms
+[15:30:29] [INFO] chunk[008]: read_bytes=6400 in_samples=3200 out_samples=3200 fbanks=[1, 23, 80] enc_out=[1, 6, 256] enc_up=[1, 20, 256] x_mean=-0.0411 x_std=0.3582 x_range=[-0.825,0.699] vc_offset=180 wav_rms=0.1132 wav_peak=0.465 time=41.5ms
+[15:30:29] [INFO] chunk[009]: read_bytes=6400 in_samples=3200 out_samples=3200 fbanks=[1, 23, 80] enc_out=[1, 6, 256] enc_up=[1, 20, 256] x_mean=-0.1864 x_std=0.3783 x_range=[-0.927,0.884] vc_offset=200 wav_rms=0.1077 wav_peak=0.557 time=42.5ms
+[15:30:34] [INFO] chunk[030]: read_bytes=6400 in_samples=3200 out_samples=3200 fbanks=[1, 23, 80] enc_out=[1, 6, 256] enc_up=[1, 20, 256] x_mean=-0.2038 x_std=0.3929 x_range=[-0.937,0.673] vc_offset=620 wav_rms=0.0929 wav_peak=0.517 time=44.6ms
+[15:30:37] [INFO] Periodic reset at chunk 50
+[15:30:40] [INFO] chunk[060]: read_bytes=6400 in_samples=3200 out_samples=3200 fbanks=[1, 23, 80] enc_out=[1, 6, 256] enc_up=[1, 20, 256] x_mean=0.0840 x_std=0.2620 x_range=[-0.953,0.857] vc_offset=340 wav_rms=0.2871 wav_peak=0.734 time=48.9ms
+[15:30:42] [INFO] Cleaning up — processed 71 chunks total
+[15:30:42] [INFO] Cleanup complete
